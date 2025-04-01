@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lineup</title>
+    <meta name="description" content="A page by surfers, for surfers">
+    <meta name="author" content="Ethan Fairchild">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="handcoding.css ">
+
+    <link rel="icon" type="img/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!--This is the start of the Header.-->
+    <header>
+        <img src="images/logo.png" alt="site logo" width="100" height="100">
+        <div>
+        <h1><span>The Lineup</span></h1></div>
+    </header>
+
+    <!--This is the start of Navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="board.html">Find Your Board</a></li>
+            <li><a href="brands.html">Brands</a></li>
+        </ul>
+    </nav>
+
+    <!--This is the start of the main-->
+    <main>
+        <h2>Find Your Board</h2>
+        <form method="get" class="myform" action="thanks.html">
+            <fieldset>
+                <legend>Surfer Stats</legend>
+                <label>Height<input type="text" name="height" required></label>
+                <label>Weight<input type="text" name="weight" required></label>
+                <label>Age<input type="tel" name="age" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Expertise Level</legend>
+                <label><input type="radio" name="method" value="kook">Kook</label>
+                <label><input type="radio" name="method" value="floater">Floater</label>
+                <label><input type="radio" name="method" value="ripper">Ripper</label>
+            </fieldset>
+            <fieldset>
+<legend>Board Type Preference</legend>
+<label><input type="checkbox" name="foamie" value="chosen">Foamie</label>
+<label><input type="checkbox" name="longboard" value="chosen">Longboard</label>
+<label><input type="checkbox" name="shortboard" value="chosen">Shortboard</label>
+<label><input type="checkbox" name="groveler" value="chosen">Groveler</label>
+<label><input type="checkbox" name="gun" value="chosen">Gun</label>
+</fieldset>
+
+<fieldset> <legend>Surfer's Contact</legend>
+    Preferred Contact Method
+    <select name="time">
+<option value="none">Select a Method</option>
+<option value="morning">Phone</option>
+<option value="noon">Text</option>
+<option value="afternoon">Email</option>
+<option value="evening">Social Media</option>
+    </select>
+</label>
+<label>Cell Phone: <input type="tel" name="phone" required placeholder="999-555-1212"></label>
+            </fieldset>
+<label>Special Requests:<textarea></textarea></label>
+            <input type="submit" value="Find my Stick">
+        </form>
+    </main>
+
+    <!--This is the start of my footer.-->
+    <footer>
+        <p>&copy; Ethan Fairchild &bull; 2025</p>
+
+    </footer>
+
+</body>
